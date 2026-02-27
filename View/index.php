@@ -8,7 +8,14 @@
     <title>Gestor de Productos - Elektroniko</title>
 </head>
 <body>
-    <h1>Lista de Productos</h1>
+    <div class="container-lg d-flex justify-content-between align-items-center mb-3 mt-3">
+        <h1>
+            Lista de Productos
+        </h1>
+        <a href="index.php?action=agregarview" class="btn btn-success btn-sm">
+            <i class="bi bi-plus-lg text-white "> AGREGAR</i>
+        </a>
+    </div>
     <div class="container-lg">
         <table class="table table-hover table-bordered">
             <thead class="table-dark">
@@ -41,7 +48,7 @@
                     </td>
                     <td class="text-center">
                         <span>
-                            <a href="index.php?action=editar&id=<?php echo $producto['id_prod']?>
+                            <a href="index.php?action=editarview&id=<?php echo $producto['id_prod']?>
                             " class="btn btn-warning btn-sm">
                                 <i class="bi bi-pencil-square" style="color: black;"></i>
                             </a>

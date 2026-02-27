@@ -25,6 +25,21 @@ Class ProductoController{
         exit;
     }
 
+    public function agregarview(){
+        require 'View/agregar.php';
+    }
+
+    public function editarview(){
+        $producto = $this->model->listar_prod($_GET['id']);
+        require 'View/editar.php';
+    }
+
+    public function agregar(){
+        $this->model->agregar($_POST['nombre_prod'], $_POST['marca_prod'], $_POST['desc_prod'], $_POST['precio'], $_POST['stock'], $_POST['estado']);
+        Header('Location: index.php');
+        exit;
+    }
+
 
 }
 

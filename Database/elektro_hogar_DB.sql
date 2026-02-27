@@ -110,6 +110,14 @@ BEGIN
     UPDATE producto SET estado = p_estado WHERE id_prod = p_id_prod;
 END$$
 
+-- Eliminar producto
+CREATE PROCEDURE sp_eliminar_producto(
+	IN p_id_prod INT
+)
+BEGIN
+	DELETE FROM producto WHERE id_prod = p_id_prod;
+END $$
+
 DELIMITER ;
 /*
 -- PRODUCTO
@@ -118,4 +126,5 @@ CALL sp_listar_productos();
 CALL sp_obtener_producto(1);
 CALL sp_actualizar_producto(11, 'Galaxy A54 Pro', 'Samsung', 'Smartphone gama media con 256GB', 1700.00, 18, TRUE);
 CALL sp_cambiar_estado_producto(11, FALSE);
+CALL sp_eliminar_producto(11);
 */

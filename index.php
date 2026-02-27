@@ -9,6 +9,12 @@
             $controller->activar(); break;
         case 'desactivar':
             $controller->desactivar(); break;
+        case 'agregarview':
+            $controller->agregarview(); break;
+        case 'agregar':
+            $controller->agregar(); break;
+        case 'editarview':
+            $controller->editarview(); break;
         default:
             $controller->index(); break;
     }
