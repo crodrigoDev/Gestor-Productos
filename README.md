@@ -7,7 +7,7 @@ Controller: Recibe la accion del usuario, llama al modelo para aplicar la accion
 View: Se muestran los html al usuario ya sea la tabla de los productos o los form de Agregar o editar
 
 ## Singleton:
-Este se utilizo en la conexion para la base de datos en la carpeta Model en el archivo database.php en el se encuentra la clase DatabaseConnection garantizando una unica instacia a la BD. Garantiza una única instancia de la conexión a la base de datos.
+Este se utilizo en la conexion para la base de datos en la carpeta Model en el archivo database.php en el se encuentra la clase DatabaseConnection. Garantiza una única instancia de la conexión a la base de datos.
 
 ## Front Controller:
 Se utiliza como punto de entrada unico para toda la aplicacion. Todas las peticiones pasan por este archivo y haciendo uso de un switch junto a la variable action despacha al metodo correspondiente del controlador
