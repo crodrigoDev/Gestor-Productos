@@ -15,6 +15,10 @@
             $controller->agregar(); break;
         case 'editarview':
             $controller->editarview(); break;
+        case 'editar':
+            $controller->editar(); break;
+        case 'eliminar':
+            $controller->eliminar(); break;
         default:
             $controller->index(); break;
     }

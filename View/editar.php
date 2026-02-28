@@ -20,7 +20,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <form action="index.php?action=actualizar" method="POST">
+                <form action="index.php?action=editar" method="POST">
                     <input type="hidden" name="id_prod" value="<?php echo $producto['id_prod'] ?>">
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Nombre</label>
@@ -49,7 +49,7 @@
                         </div>
                     </div>
                     <div class="mb-3 form-check form-switch">
-                        <input type="checkbox" class="form-check-input" id="estado" name="estado" value="1"
+                        <input type="checkbox" class="form-check-input" id="estado" name="estado"
                             <?php echo isset($producto) && $producto['estado'] ? 'checked' : '' ?>>
                         <label class="form-check-label" for="estado">Activo</label>
                     </div>

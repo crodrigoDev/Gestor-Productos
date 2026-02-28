@@ -41,14 +41,14 @@
                     <td><?php echo $producto['precio']?></td>
                     <td><?php echo $producto['stock']?></td>
                     <td class="text-center">
-                        <a href="index.php?action=<?= $producto['estado'] ? 'desactivar' : 'activar' ?>&id=<?= $producto['id_prod'] ?>"
+                        <a href="index.php?action=<?= $producto['estado'] ? 'desactivar' : 'activar' ?>&id_prod=<?= $producto['id_prod'] ?>"
                            class="badge <?= $producto['estado'] ? 'bg-success' : 'bg-danger' ?> text-decoration-none">
                             <?= $producto['estado'] ? 'Activo' : 'Inactivo' ?>
                         </a>
                     </td>
                     <td class="text-center">
                         <span>
-                            <a href="index.php?action=editarview&id=<?php echo $producto['id_prod']?>
+                            <a href="index.php?action=editarview&id_prod=<?php echo $producto['id_prod']?>
                             " class="btn btn-warning btn-sm">
                                 <i class="bi bi-pencil-square" style="color: black;"></i>
                             </a>
@@ -56,7 +56,7 @@
                     </td>
                     <td class="text-center">
                         <span>
-                            <a href="index.php?action=eliminar&id=<?php echo $producto['id_prod']?>
+                            <a href="index.php?action=eliminar&id_prod=<?php echo $producto['id_prod']?>
                             " class="btn btn-danger btn-sm">
                                 <i class="bi bi-archive-fill" style="color: black;"></i>
                             </a>
