@@ -1,3 +1,7 @@
+# Se utilizo PHPUnit 11.5 para hacer los test, instalar antes de utilizar -> composer install seguido de .vendor\bin\phpunit --testdox para iniciar el testing
+
+
+
 # Patrones utilizados en el proyecto
 
 ## Patron MVC:
