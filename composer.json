@@ -1,0 +1,23 @@
+{
+    "name": "gestor/productos",
+    "description": "Gestor de Productos",
+    "type": "project",
+    "authors": [
+        {
+            "name": "crodrigoDev",
+            "email": "212727257+crodrigoDev@users.noreply.github.com"
+        }
+    ],
+    "config": {
+        "audit": {
+            "block-insecure": false
+        }
+    },
+    "autoload": {
+        "classmap": ["Model/", "Controller/"]
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "11.5"
+    }
+}
